@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this dataset or code, please cite as below."
+authors:
+  - family-names: "Chen"
+    given-names: "Ruqing"
+    email: "ruqing@hotmail.com"
+    affiliation: "GUT Geoservice Inc., Montreal, Canada"
+title: "Spectral Rigidity in Goldbach Representations: Data and Code"
+version: 1.0.0
+doi: 10.5281/zenodo.18148544
+date-released: 2026-01-04
+url: "https://github.com/Ruqing1963/goldbach-gue"
+repository-code: "https://github.com/Ruqing1963/goldbach-gue"
+license: CC-BY-4.0
+keywords:
+  - Goldbach conjecture
+  - prime numbers
+  - GUE statistics
+  - random matrix theory
+  - spectral rigidity
+  - number theory
+abstract: >-
+  Complete dataset and analysis code for investigating 
+  sub-Poissonian statistics in Goldbach representation counts
+  across 13 orders of magnitude (N = 10³ to 10¹⁶).
