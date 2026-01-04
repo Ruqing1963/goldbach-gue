@@ -1,0 +1,46 @@
+{
+  "description": "Monte Carlo probe results for extreme scales",
+  "date": "2026-01-04",
+  "author": "Ruqing Chen",
+  
+  "probes": [
+    {
+      "scale": "10^12",
+      "N": 1000000000046,
+      "N_description": "semiprime (2 × 500000000023)",
+      "method": "Monte Carlo sampling",
+      "samples": 1000000,
+      "runtime_seconds": 60,
+      "results": {
+        "G_N_predicted_HL": 935227138,
+        "G_N_estimated_MC": 929406799,
+        "bias_percent": -0.62,
+        "confidence_interval_95": 2.28,
+        "standard_error": 1.16
+      },
+      "notes": "Bias within statistical error; formula accurate at trillion scale"
+    },
+    {
+      "scale": "10^16",
+      "N": 10000000000000046,
+      "N_description": "10 quadrillion + 46",
+      "method": "Monte Carlo sampling",
+      "samples": 1000000,
+      "runtime_seconds": 90,
+      "results": {
+        "G_N_predicted_HL": 5152032021328,
+        "G_N_estimated_MC": 5134610052943,
+        "bias_percent": -0.34,
+        "confidence_interval_95": 2.16,
+        "standard_error": 1.10
+      },
+      "notes": "Smallest bias observed; Hardy-Littlewood highly accurate at 10^16"
+    }
+  ],
+  
+  "summary": {
+    "bias_trend": "Decreasing with scale (convergence toward zero)",
+    "gue_support": "Consistent with sub-Poissonian variance (alpha ~ 0.5)",
+    "conclusion": "No structural breakdown detected up to 10^16"
+  }
+}
